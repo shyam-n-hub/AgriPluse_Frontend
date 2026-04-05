@@ -2,18 +2,21 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  NODE_VERSION = "20"
+
 [[headers]]
-  for = "/*.js"
+  for = "/assets/*.js"
   [headers.values]
     Content-Type = "application/javascript; charset=utf-8"
 
 [[headers]]
-  for = "/*.mjs"
+  for = "/assets/*.mjs"
   [headers.values]
     Content-Type = "application/javascript; charset=utf-8"
 
 [[headers]]
-  for = "/*.css"
+  for = "/assets/*.css"
   [headers.values]
     Content-Type = "text/css; charset=utf-8"
 

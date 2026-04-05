@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 
 // FastAPI backend URL (Deployed on Render)
-const API_URL = "https://agripulse-backend-holp.onrender.com/api/predict";
+const API_URL = "https://agripulse-backend-wkgp.onrender.com/api/predict";
 
 export default function CropChecker() {
     const [selectedFile, setSelectedFile] = useState(null);
